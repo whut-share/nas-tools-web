@@ -23,7 +23,7 @@ import UserProfile from '@/layouts/components/UserProfile.vue'
       <VSpacer />
 
       <a
-        href="https://github.com/themeselection/materio-vuetify-vuejs-admin-template-free"
+        href="https://github.com/jxxghp/nas-tools"
         target="_blank"
         rel="noopener noreferrer"
         style="color: inherit"
