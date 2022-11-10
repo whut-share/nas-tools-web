@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { Anchor } from 'vuetify/lib/components'
-import avatar1 from '@/assets/images/avatars/avatar-1.png'
+import avatar1 from '@/assets/images/avatars/avatar-1.png';
+import type { Anchor } from 'vuetify/lib/components';
 
 const avatarBadgeProps = {
   dot: true,
@@ -46,52 +46,26 @@ const avatarBadgeProps = {
             </template>
 
             <VListItemTitle class="font-weight-semibold">
-              John Doe
+              admin
             </VListItemTitle>
             <VListItemSubtitle class="text-disabled">
-              Admin
+              管理员
             </VListItemSubtitle>
           </VListItem>
 
           <VDivider class="my-2" />
-
-          <!-- 👉 Profile -->
-          <VListItem link>
-            <template #prepend>
-              <VIcon
-                class="me-2"
-                icon="mdi-account-outline"
-                size="22"
-              />
-            </template>
-
-            <VListItemTitle>Profile</VListItemTitle>
-          </VListItem>
-
-          <!-- 👉 Settings -->
-          <VListItem link>
-            <template #prepend>
-              <VIcon
-                class="me-2"
-                icon="mdi-cog-outline"
-                size="22"
-              />
-            </template>
-
-            <VListItemTitle>Settings</VListItemTitle>
-          </VListItem>
 
           <!-- 👉 Pricing -->
           <VListItem link>
             <template #prepend>
               <VIcon
                 class="me-2"
-                icon="mdi-currency-usd"
+                icon="mdi-message-outline"
                 size="22"
               />
             </template>
 
-            <VListItemTitle>Pricing</VListItemTitle>
+            <VListItemTitle>消息中心</VListItemTitle>
           </VListItem>
 
           <!-- 👉 FAQ -->
@@ -99,16 +73,40 @@ const avatarBadgeProps = {
             <template #prepend>
               <VIcon
                 class="me-2"
-                icon="mdi-help-circle-outline"
+                icon="mdi-text-box-outline"
                 size="22"
               />
             </template>
 
-            <VListItemTitle>FAQ</VListItemTitle>
+            <VListItemTitle>实时日志</VListItemTitle>
           </VListItem>
 
           <!-- Divider -->
           <VDivider class="my-2" />
+
+          <VListItem to="/">
+            <template #prepend>
+              <VIcon
+                class="me-2"
+                icon="mdi-restart-alert"
+                size="22"
+              />
+            </template>
+
+            <VListItemTitle>重启</VListItemTitle>
+          </VListItem>
+
+          <VListItem to="/">
+            <template #prepend>
+              <VIcon
+                class="me-2"
+                icon="mdi-update"
+                size="22"
+              />
+            </template>
+
+            <VListItemTitle>更新</VListItemTitle>
+          </VListItem>
 
           <!-- 👉 Logout -->
           <VListItem to="/login">
@@ -120,7 +118,7 @@ const avatarBadgeProps = {
               />
             </template>
 
-            <VListItemTitle>Logout</VListItemTitle>
+            <VListItemTitle>注销</VListItemTitle>
           </VListItem>
         </VList>
       </VMenu>
