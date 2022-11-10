@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import DrawerContent from './DrawerContent.vue'
 import { VerticalNavLayout } from '@layouts'
+import DrawerContent from './DrawerContent.vue'
 
 // Components
 import Footer from '@/layouts/components/Footer.vue'
@@ -18,6 +18,7 @@ import UserProfile from '@/layouts/components/UserProfile.vue'
         density="compact"
         max-width="100px"
         class="app-bar-search d-none d-sm-block"
+        placeholder="订阅/搜索"
       />
 
       <VSpacer />

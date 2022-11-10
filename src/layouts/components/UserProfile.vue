@@ -84,7 +84,7 @@ const avatarBadgeProps = {
           <!-- Divider -->
           <VDivider class="my-2" />
 
-          <VListItem to="/">
+          <VListItem link>
             <template #prepend>
               <VIcon
                 class="me-2"
@@ -96,7 +96,7 @@ const avatarBadgeProps = {
             <VListItemTitle>重启</VListItemTitle>
           </VListItem>
 
-          <VListItem to="/">
+          <VListItem link>
             <template #prepend>
               <VIcon
                 class="me-2"

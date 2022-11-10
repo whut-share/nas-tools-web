@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import logo from '@/assets/logo.svg?raw';
+import logo from '@/assets/logo.png';
 import { VerticalNavLink, VerticalNavSectionTitle } from '@layouts';
 import { useTheme } from 'vuetify';
 const vuetifyTheme = useTheme()
@@ -10,16 +10,10 @@ const vuetifyTheme = useTheme()
   <div class="nav-header">
     <RouterLink
       to="/"
-      class="app-logo d-flex align-center gap-x-3 app-title-wrapper"
+      class="app-logo align-center"
     >
       <!-- ℹ️ You can also use img tag or VImg here -->
-      <div v-html="logo" />
-
-      <Transition name="vertical-nav-app-title">
-        <h1 class="font-weight-semibold leading-normal text-xl">
-          NAStool
-        </h1>
-      </Transition>
+      <VImg :src="logo" :cover="true" width="9rem"/>
     </RouterLink>
   </div>
 
@@ -36,7 +30,7 @@ const vuetifyTheme = useTheme()
     <VerticalNavSectionTitle :item="{ heading: '资源' }" />
     <VerticalNavLink
       :item="{
-        title: '资源搜索',
+        title: '搜索',
         to: '',
         icon: { icon: 'mdi-magnify' },
       }"
@@ -45,7 +39,7 @@ const vuetifyTheme = useTheme()
       :item="{
         title: '推荐',
         to: 'card-basic',
-        icon: { icon: 'mdi-star-outline' },
+        icon: { icon: 'mdi-star-outline' }
       }"
     />
 
