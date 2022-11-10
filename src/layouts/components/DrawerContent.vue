@@ -31,7 +31,7 @@ const vuetifyTheme = useTheme()
     <VerticalNavLink
       :item="{
         title: '搜索',
-        to: '',
+        to: 'icons',
         icon: { icon: 'mdi-magnify' },
       }"
     />
@@ -49,7 +49,7 @@ const vuetifyTheme = useTheme()
     <VerticalNavLink
       :item="{
         title: '站点管理',
-        to: '',
+        to: 'tables',
         icon: { icon: 'mdi-sitemap-outline' },
       }"
     />
@@ -73,7 +73,6 @@ const vuetifyTheme = useTheme()
     <VerticalNavLink
       :item="{
         title: '媒体整理',
-        to: '',
         icon: { icon: 'mdi-movie-cog-outline' },
       }"
     />
@@ -83,7 +82,6 @@ const vuetifyTheme = useTheme()
     <VerticalNavLink
       :item="{
         title: '服务',
-        to: '',
         icon: { icon: 'mdi-apps' },
       }"
     />
@@ -97,7 +95,7 @@ const vuetifyTheme = useTheme()
     <VerticalNavLink
       :item="{
         title: '进阶设置',
-        to: '',
+        to: 'form-layouts',
         icon: { icon: 'mdi-account-cog-outline' },
       }"
     />
