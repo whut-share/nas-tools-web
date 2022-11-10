@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { useTheme } from 'vuetify'
-import logo from '@/assets/logo.svg?raw'
-import { VerticalNavLink, VerticalNavSectionTitle } from '@layouts'
+import logo from '@/assets/logo.svg?raw';
+import { VerticalNavLink, VerticalNavSectionTitle } from '@layouts';
+import { useTheme } from 'vuetify';
 const vuetifyTheme = useTheme()
 </script>
 
@@ -16,8 +16,8 @@ const vuetifyTheme = useTheme()
       <div v-html="logo" />
 
       <Transition name="vertical-nav-app-title">
-        <h1 class="font-weight-semibold leading-normal text-xl text-uppercase">
-          Materio
+        <h1 class="font-weight-semibold leading-normal text-xl">
+          NAStool
         </h1>
       </Transition>
     </RouterLink>
@@ -27,83 +27,84 @@ const vuetifyTheme = useTheme()
   <ul>
     <VerticalNavLink
       :item="{
-        title: 'Dashboard',
+        title: '开始',
         to: 'index',
         icon: { icon: 'mdi-home-outline' },
       }"
     />
+    <!-- 👉 资源 -->
+    <VerticalNavSectionTitle :item="{ heading: '资源' }" />
     <VerticalNavLink
       :item="{
-        title: 'Account Settings',
-        to: 'account-settings',
-        icon: { icon: 'mdi-account-cog-outline' },
-      }"
-    />
-    <!-- 👉 Pages -->
-    <VerticalNavSectionTitle :item="{ heading: 'Pages' }" />
-    <VerticalNavLink
-      :item="{
-        title: 'Login',
-        to: 'login',
-        target: '_blank',
-        icon: { icon: 'mdi-login' },
+        title: '资源搜索',
+        to: '',
+        icon: { icon: 'mdi-magnify' },
       }"
     />
     <VerticalNavLink
       :item="{
-        title: 'Register',
-        to: 'register',
-        target: '_blank',
-        icon: { icon: 'mdi-account-plus-outline' },
-      }"
-    />
-
-    <!-- ℹ️ This path doesn't exist so 404 route will catch this undefined path -->
-    <VerticalNavLink
-      :item="{
-        title: 'Error',
-        to: { path: '/error' },
-        target: '_blank',
-        icon: { icon: 'mdi-alert-circle-outline' },
-      }"
-    />
-
-    <!-- 👉 User Interface -->
-    <VerticalNavSectionTitle :item="{ heading: 'User Interface' }" />
-
-    <VerticalNavLink
-      :item="{
-        title: 'Typography',
-        to: 'typography',
-        icon: { icon: 'mdi-alpha-t-box-outline' },
-      }"
-    />
-    <VerticalNavLink
-      :item="{
-        title: 'Icons',
-        to: 'icons',
-        icon: { icon: 'mdi-eye-outline' },
-      }"
-    />
-    <VerticalNavLink
-      :item="{
-        title: 'Cards',
+        title: '推荐',
         to: 'card-basic',
-        icon: { icon: 'mdi-credit-card-outline' },
+        icon: { icon: 'mdi-star-outline' },
+      }"
+    />
+
+    <!-- 👉 站点 & 订阅 -->
+    <VerticalNavSectionTitle :item="{ heading: '站点 & 订阅' }" />
+
+    <VerticalNavLink
+      :item="{
+        title: '站点管理',
+        to: '',
+        icon: { icon: 'mdi-sitemap-outline' },
       }"
     />
     <VerticalNavLink
       :item="{
-        title: 'Tables',
-        to: 'tables',
-        icon: { icon: 'mdi-table' },
+        title: '订阅管理',
+        to: '',
+        icon: { icon: 'mdi-list-box-outline' },
+      }"
+    />
+    
+    <!-- 👉 下载 & 整理 -->
+    <VerticalNavSectionTitle :item="{ heading: '下载 & 整理' }" />
+    <VerticalNavLink
+      :item="{
+        title: '下载管理',
+        to: '',
+        icon: { icon: 'mdi-tray-arrow-down' },
       }"
     />
     <VerticalNavLink
       :item="{
-        title: 'Form Layouts',
-        to: 'form-layouts',
-        icon: { icon: 'mdi-form-select' },
+        title: '媒体整理',
+        to: '',
+        icon: { icon: 'mdi-movie-cog-outline' },
+      }"
+    />
+
+    <!-- 👉 系统 -->
+    <VerticalNavSectionTitle :item="{ heading: '系统' }" />
+    <VerticalNavLink
+      :item="{
+        title: '服务',
+        to: '',
+        icon: { icon: 'mdi-apps' },
+      }"
+    />
+    <VerticalNavLink
+      :item="{
+        title: '基础设置',
+        to: 'account-settings',
+        icon: { icon: 'mdi-cog-outline' },
+      }"
+    />
+    <VerticalNavLink
+      :item="{
+        title: '进阶设置',
+        to: '',
+        icon: { icon: 'mdi-account-cog-outline' },
       }"
     />
   </ul>
