@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 222.67 277.33 277.33" xmlns="http://www.w3.org/2000/svg">
+  <g id="svgGroup" stroke-linecap="round" fill-rule="nonzero" font-size="9pt" stroke="#000" stroke-width="0" fill="#ffffff" style="stroke: rgb(0, 0, 0); stroke-width: 0; fill: rgb(255, 255, 255);" transform="matrix(4.484993, 0, 0, 3.268901, 0, 264.727356)">
+    <path d="M 51.656 -12.866 L 10.182 -12.866 C 4.56 -12.866 0 -6.612 0 1.102 L 0 58.008 C 0 65.719 4.56 71.973 10.182 71.973 L 51.656 71.973 C 57.28 71.973 61.835 65.719 61.835 58.008 L 61.835 1.102 C 61.837 -6.615 57.279 -12.866 51.656 -12.866 Z" style="fill: rgb(35, 108, 196);"/>
+    <path d="M 40.137 49.609 L 40.137 0 L 52.051 0 L 52.051 71.973 L 40.137 71.973 L 15.918 29.395 L 15.918 6.934 L 40.137 49.609 Z M 11.914 71.973 L 0 71.973 L 0 0 L 11.914 0 L 11.914 71.973 Z" vector-effect="non-scaling-stroke" style=""/>
+  </g>
+</svg>
